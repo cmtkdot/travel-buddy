@@ -1,8 +1,8 @@
 "use server";
 
 import { auth } from "@clerk/nextjs";
-import { db } from "@/db";
-import { users, trips } from "@/db/schema";
+import { db } from "./db";
+import { users, trips } from "./db/schema";
 import { eq } from "drizzle-orm";
 
 export async function createUserRecord() {

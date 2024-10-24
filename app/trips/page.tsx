@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import WeatherCard from "@/components/weather/weather-card";
-import CurrencyConverter from "@/components/currency/currency-converter";
+import WeatherCard from "../../components/weather/weather-card";
+import CurrencyConverter from "../../components/currency/currency-converter";
 
 interface Trip {
   id: string;

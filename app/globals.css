@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #000000;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-rubik;
+  }
+}
+
+@layer components {
+  .trip-card {
+    @apply bg-card rounded-card shadow-card p-4 transition-transform hover:scale-[1.02];
+  }
+  
+  .primary-button {
+    @apply bg-primary text-primary-foreground rounded-button px-6 py-3 
+           font-medium transition-colors hover:bg-primary/90;
+  }
+  
+  .search-input {
+    @apply w-full rounded-full bg-muted px-4 py-3 text-foreground 
+           placeholder:text-foreground/60 focus:outline-none focus:ring-2 
+           focus:ring-primary;
+  }
+  
+  .category-pill {
+    @apply rounded-full px-4 py-2 text-sm font-medium;
+  }
+  
+  .category-pill-lime {
+    @apply bg-accent-lime text-foreground;
+  }
+  
+  .category-pill-pink {
+    @apply bg-accent-pink text-foreground;
+  }
+  
+  .category-pill-blue {
+    @apply bg-accent-blue text-white;
+  }
+}

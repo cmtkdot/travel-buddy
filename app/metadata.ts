@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+Bimport { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Travel Buddy - Your AI Travel Companion",
