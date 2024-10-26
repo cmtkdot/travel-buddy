@@ -8,9 +8,9 @@ export default async function DashboardLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { userId } = auth();
 
   if (!userId) {
+  if (!user) {
     redirect("/sign-in");
   }
 

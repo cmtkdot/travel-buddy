@@ -4,14 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #FFFFFF;
-  --foreground: #000000;
-}
-
 @layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+  
   body {
-    @apply bg-background text-foreground font-rubik;
+    @apply bg-background text-foreground;
   }
 }
 
@@ -45,5 +45,14 @@
   
   .category-pill-blue {
     @apply bg-accent-blue text-white;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
